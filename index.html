@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>우리반 방명록</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px;
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    background: #f4f6fb;
+    color: #333;
+  }
+  h1 {
+    text-align: center;
+    margin: 0 0 32px;
+    color: #3b4a8c;
+  }
+  .cards {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  .card h2 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    color: #3b4a8c;
+  }
+  .card p {
+    margin: 0 0 12px;
+    line-height: 1.5;
+  }
+  .card .date {
+    font-size: 0.8rem;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+  <h1>우리반 방명록</h1>
+
+  <section class="cards">
+    <article class="card">
+      <h2>김민수</h2>
+      <p>올 한 해도 모두 즐겁게 지내자!</p>
+      <span class="date">2026-03-02</span>
+    </article>
+    <article class="card">
+      <h2>이서연</h2>
+      <p>우리 반 최고! 다들 사랑해 ♥</p>
+      <span class="date">2026-03-03</span>
+    </article>
+    <article class="card">
+      <h2>박지훈</h2>
+      <p>체육대회 같이 우승하자 💪</p>
+      <span class="date">2026-03-05</span>
+    </article>
+  </section>
+</body>
+</html>
